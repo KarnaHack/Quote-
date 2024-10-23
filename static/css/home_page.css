@@ -1,24 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: sans-serif,Arial, Helvetica;
+    background-color: #f1ede6;
+    color: #333;
+}
+
+#mian-container{
+    display: flex;
+    height: 100vh;
+
+}
+
+/* Side nav bar.*/
 #side-nav{
-    width: 150px;
-    height:100%;
+    width: 15vh;
     background-color: rgb(204,213,174);
-    display: inline-block;
-    padding-right: 15px;
-    margin-right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
 
 }
 
-#logo{
-    text-align: justify;
+#side-nav .logo{
+    font-size: 32px;
+    margin-bottom: 50px;
 }
 
-.nav-icons{
-    margin-bottom: 30px;
-    margin-top: 30px;
+#side-nav ul{
+    list-style: none;
 }
 
-.icons{
+#side-nav a{
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+
+}
+
+#side-nav li{
+    margin-bottom: 50px;
+
+}
+
+#side-nav img{
     width: 25px;
     height: 25px;
     margin-right: 10px;   
@@ -26,39 +55,83 @@
     
 }
 
-#logo{
-    width: 50px;
-    height: 25px;
+/* main contain Box*/
+#container{
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
-#top-search{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(233,237,207);
-    margin: 20px;
-    padding: 25px;
-    display: inline-block
-
-
+/*This section is for TOP search bar*/
+#search-profile{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-#content-detail{
-    width: 100px;
-    height: 100px;
-    background-color: rgb(250,237,205);
-    margin: 20px;
-    padding: 25px;
-    display: inline-block;
+#search-profile input{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #F6F3EE;
 }
 
-#content-slider{
-    width: 100px;
-    height: 100px;
-    background-color:blueviolet;
-    margin: 20px;
-    padding: 25px;
-    display: inline-block;
-
+#profile{
+    display: flex;
+    align-items: center;
 }
 
+#profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*Content detail section*/
+.content-detail {
+    margin-bottom: 30px;
+}
+
+.content-detail h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#start-reading {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.book-summary {
+    display: flex;
+    margin-top: 20px;
+    width: 50vw;
+}
+
+.book-summary img {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.author-details {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.author-details img {
+    width: 50;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 

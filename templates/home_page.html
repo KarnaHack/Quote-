@@ -7,50 +7,75 @@
     <link rel="stylesheet" href="../static/css/home_page.css">
 </head>
 <body>
-
-     
-    <div id="mian-container"
-    style="display: inline-block;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;">
+  
+    <div id="mian-container">
 
         <!--Side nav bar-->
         <nav id="side-nav">
-            <div style="text-align: center;
-            font-size:larger ;">
-                <h1>Quote</h1>
-            </div><br><br><br><br>
 
-            <ul style="list-style: none;">
-                <li class="nav-icons"><a href="../templates/home_page.html" style="text-decoration: none; color: rgb(0, 0, 0);" ><img class="icons" src="../static/icons/home.png" alt=""> Home</a></li>
-                <li class="nav-icons"><a href="../templates/explore_page.html" style="text-decoration: none; color: rgb(0, 0, 0);" ><img class="icons" src="../static/icons/explore.png" alt="">Explore</a></li>
-                <li class="nav-icons"><a href="../templates/library.html" style="text-decoration: none; color: rgb(0, 0, 0);" ><img class="icons" src="../static/icons/library.png" alt="">Library</a></li>
-                <li class="nav-icons"><a href="../templates/saved.html" style="text-decoration: none; color: rgb(0, 0, 0);" ><img class="icons" src="../static/icons/saved.png" alt="">Collection</a></li>
-                <li class="nav-icons"><a href="../templates/profile_page.html" style="text-decoration: none; color: rgb(0, 0, 0);" ><img class="icons" src="../static/icons/home.png" alt="">Setting</a></li>
+            <div class="logo">Quote</div>
+
+            <ul>
+                <li><a href="../templates/home_page.html" ><img src="../static/images/icons/home.png" alt=""></a></li>
+                <li><a href="../templates/explore_page.html" ><img src="../static/images/icons/explore.png" alt=""></a></li>
+                <li><a href="../templates/library.html"  ><img src="../static/images/icons/library.png" alt=""></a></li>
+                <li><a href="../templates/saved.html"  ><img src="../static/images/icons/saved.png" alt=""></a></li>
+                <li><a href="../templates/profile_page.html" ><img src="../static/images/icons/home.png" alt=""></a></li>
             </ul>
-
-
+            
         </nav>
 
-        <!--top search bar-->
-        <div id="top-search">
-            <input type="text">
 
+        <!-- Main content box-->
+       
+        <div id="container">
+
+            <!--Search and profile bar-->
+            <div id="search-profile">
+
+                <input type="text" placeholder="Search, book name, author.....">
+                <div id="profile">
+                    <img src="../static/images/User-dp/sonia.jpg"  alt="Profile Picture">
+                    <span>Sonia</span>
+                </div>
+            </div>
+
+            <div style="display:flex; flex-direction: row;">
+                
+                <!-- Book Summary -->
+                <div class="book-summary">
+                    <img id="selected-book-cover" src="../static/images/book_cover/1.Harry Potter and the Sorcerer's Stone.jpg" alt="Book Cover">
+                    <div class="book-info">
+                        <h3 id="book-title">Harry Potter and the Sorcerer's Stone</h3>
+                        <p id="book-summary">Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!</p>
+                    </div>
+                </div>
+
+                <!-- Author Details -->
+                <div class="author-details">
+                    <img id="author-pic" src="../static/images/User-dp/sonia.jpg " alt="Author Picture">
+
+                    <div class="author-info">
+                        <h4 id="author-name">George R. R. Martin</h4>
+                        <button id="view-author-profile">View Profile</button>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+            <div>
+
+            </div>
+
+
+
+  
         </div>
 
-        <!--selected content detail area-->
-        <div id="content-detail">
-
-        </div>
-
-        <!--Content slider and display-->
-        <div id="content-slider">
-
-        </div>
-
-
+        
     </div>
-    
+    <script src="../static/js/home_page.js"></script>
 </body>
 </html>
