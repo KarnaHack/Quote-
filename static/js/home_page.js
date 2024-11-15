@@ -1,37 +1,42 @@
-// Selecting all book covers and the elements to update the book details
-const bookCovers = document.querySelectorAll('.book');
-const bookTitle = document.getElementById('book-title');
-const bookSummary = document.getElementById('book-summary');
-const selectedBookCover = document.getElementById('selected-book-cover');
-
-// Updating book details when hovering over a book cover
-bookCovers.forEach(book => {
-    book.addEventListener('mouseover', () => {
-        const title = book.getAttribute('data-title');
-        const summary = book.getAttribute('data-summary');
-        bookTitle.innerText = title;
-        bookSummary.innerText = summary;
-        selectedBookCover.src = book.src;
-    });
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1, // Adjust this for responsive design
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
 });
 
-// Scroll functionality for the book slider
-const slider = document.querySelector('.book-list');
-const bookListWidth = slider.scrollWidth;  // Total width of all books
-const visibleWidth = slider.clientWidth;    // Width of the visible area in the book slider
 
-let scrollAmount = 0;  // Variable to track the current scroll position
+const toggleButton = document.getElementById('toggle-btn')
+const sidebar = document.getElementById('side-nav')
 
-// Left scroll button functionality
-document.querySelector('.slider-btn.left').addEventListener('click', () => {
-    scrollAmount -= visibleWidth / 2;  // Scroll half of the visible width
-    if (scrollAmount < 0) scrollAmount = 0;  // Prevent scrolling past the start
-    slider.style.transform = `translateX(-${scrollAmount}px)`;  // Apply the scroll effect
-});
+function toggleSidebar(){
+    sidebar.classList.toggle('close')
+    toggleButton.classList.toggle('rotate')
 
-// Right scroll button functionality
-document.querySelector('.slider-btn.right').addEventListener('click', () => {
-    scrollAmount += visibleWidth / 2;  // Scroll half of the visible width
-    if (scrollAmount > bookListWidth - visibleWidth) scrollAmount = bookListWidth - visibleWidth;  // Prevent scrolling past the end
-    slider.style.transform = `translateX(-${scrollAmount}px)`;  // Apply the scroll effect
-});
+    closeAllSubmenu()
+
+   
+}
+
+function toggleSubMenu(button){
+
+    if(!button.nextElementSibling.classList.contains('show')){
+        closeAllSubmenu()
+    }
+    button.nextElementSibling.classList.toggle('show')
+    button.classList.toggle('rotate')
+
+    if(sidebar.classList.contains('close')){
+        sidebar.classList.toggle('close')
+        toggleButton.classList.toggle('rotate')
+    }
+}
+
+function closeAllSubmenu(){
+    Array.from(sidebar.getElementsByClassName('show')).forEach(ul =>{
+        ul.classList.remove('show')
+        ul.previousElementSibling.classList.remove('rotate')
+    })
+}
