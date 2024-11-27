@@ -1,13 +1,3 @@
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1, // Adjust this for responsive design
-    spaceBetween: 20,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
-
-
 const toggleButton = document.getElementById('toggle-btn')
 const sidebar = document.getElementById('side-nav')
 
