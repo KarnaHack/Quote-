@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+      }
+    .container{
+        height: 100vh;
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    swiper-container {
+
+        width: 90%;
+        height: 90%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .book-img{
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          height: 80%;
+          
+        }
+      }
+
+      .bookcontent{
+        padding: 10px;
+        margin-right: 1em;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+          text-align: justify;
+          width: 80%;
+        }
+      }
+    }
+
+   
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <swiper-container class="mySwiper" pagination="true">
+
+        <swiper-slide>
+          <div class="book-img">
+            <img src="./static/images/book_cover/1.Harry Potter and the Sorcerer's Stone.jpg" alt="">
+          </div>
+          <div class="bookcontent">
+            <h2 class="book-title">Harry Potter and the Sorcerer's Stone</h2><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat hic quidem ea eligendi, esse architecto inventore error qui, dignissimos, non beatae? Voluptatibus, nesciunt qui. Eligendi quos aut illum quod libero.
+            Ratione cum placeat blanditiis ipsum. Excepturi voluptatibus fuga, optio et facilis consequatur explicabo necessitatibus doloremque molestias quis earum laborum facere quisquam qui saepe labore accusamus! Sint dolorum aspernatur tempora quas.
+            Optio quae ullam magni quam. Corporis veniam odit vero inventore consequatur voluptate voluptas debitis totam sapiente quis, blanditiis facere nobis doloribus voluptatem omnis nam et exercitationem! Assumenda fugit minima ipsum?
+            Magni debitis quis esse labore soluta fugiat reiciendis adipisci qui eaque exercitationem, aliquid, vel nesciunt. Hic atque voluptate tempora fuga, quasi saepe repellendus necessitatibus delectus eum fugiat excepturi placeat maxime!</p>
+            <a href="#">Read more</a>
+          </div>   
+          
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="book-img">
+            <img src="./static/images/book_cover/2.Harry Potter and the Chamber of Secrets.jpg" alt="">
+          </div>
+          <div class="bookcontent">
+            <h2 class="book-title">Harry Potter and the Chamber of Secrets</h2><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat hic quidem ea eligendi, esse architecto inventore error qui, dignissimos, non beatae? Voluptatibus, nesciunt qui. Eligendi quos aut illum quod libero.
+            Ratione cum placeat blanditiis ipsum. Excepturi voluptatibus fuga, optio et facilis consequatur explicabo necessitatibus doloremque molestias quis earum laborum facere quisquam qui saepe labore accusamus! Sint dolorum aspernatur tempora quas.
+            Optio quae ullam magni quam. Corporis veniam odit vero inventore consequatur voluptate voluptas debitis totam sapiente quis, blanditiis facere nobis doloribus voluptatem omnis nam et exercitationem! Assumenda fugit minima ipsum?
+            Magni debitis quis esse labore soluta fugiat reiciendis adipisci qui eaque exercitationem, aliquid, vel nesciunt. Hic atque voluptate tempora fuga, quasi saepe repellendus necessitatibus delectus eum fugiat excepturi placeat maxime!</p>
+            <a href="#">Read more</a>
+          </div>   
+          
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="book-img">
+            <img src="./static/images/book_cover/3.Harry Potter and the Prisoner of Azkaban.jpg" alt="">
+          </div>
+          <div class="bookcontent">
+            <h2 class="book-title">Harry Potter and the Chamber of Secrets</h2><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat hic quidem ea eligendi, esse architecto inventore error qui, dignissimos, non beatae? Voluptatibus, nesciunt qui. Eligendi quos aut illum quod libero.
+            Ratione cum placeat blanditiis ipsum. Excepturi voluptatibus fuga, optio et facilis consequatur explicabo necessitatibus doloremque molestias quis earum laborum facere quisquam qui saepe labore accusamus! Sint dolorum aspernatur tempora quas.
+            Optio quae ullam magni quam. Corporis veniam odit vero inventore consequatur voluptate voluptas debitis totam sapiente quis, blanditiis facere nobis doloribus voluptatem omnis nam et exercitationem! Assumenda fugit minima ipsum?
+            Magni debitis quis esse labore soluta fugiat reiciendis adipisci qui eaque exercitationem, aliquid, vel nesciunt. Hic atque voluptate tempora fuga, quasi saepe repellendus necessitatibus delectus eum fugiat excepturi placeat maxime!</p>
+            <a href="#">Read more</a>
+          </div>   
+          
+        </swiper-slide>
+        
+        <swiper-slide>
+          <div class="book-img">
+            <img src="./static/images/book_cover/5.Harry Potter and the Order of the Phoenix.jpg" alt="">
+          </div>
+          <div class="bookcontent">
+            <h2 class="book-title">Harry Potter and the Chamber of Secrets</h2><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat hic quidem ea eligendi, esse architecto inventore error qui, dignissimos, non beatae? Voluptatibus, nesciunt qui. Eligendi quos aut illum quod libero.
+            Ratione cum placeat blanditiis ipsum. Excepturi voluptatibus fuga, optio et facilis consequatur explicabo necessitatibus doloremque molestias quis earum laborum facere quisquam qui saepe labore accusamus! Sint dolorum aspernatur tempora quas.
+            Optio quae ullam magni quam. Corporis veniam odit vero inventore consequatur voluptate voluptas debitis totam sapiente quis, blanditiis facere nobis doloribus voluptatem omnis nam et exercitationem! Assumenda fugit minima ipsum?
+            Magni debitis quis esse labore soluta fugiat reiciendis adipisci qui eaque exercitationem, aliquid, vel nesciunt. Hic atque voluptate tempora fuga, quasi saepe repellendus necessitatibus delectus eum fugiat excepturi placeat maxime!</p>
+            <a href="#">Read more</a>
+          </div>   
+          
+        </swiper-slide>
+        
+        <swiper-slide>
+          <div class="book-img">
+            <img src="./static/images/book_cover/6.Harry Potter and the Half-blood Prince.jpg" alt="">
+          </div>
+          <div class="bookcontent">
+            <h2 class="book-title">Harry Potter and the Chamber of Secrets</h2><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat hic quidem ea eligendi, esse architecto inventore error qui, dignissimos, non beatae? Voluptatibus, nesciunt qui. Eligendi quos aut illum quod libero.
+            Ratione cum placeat blanditiis ipsum. Excepturi voluptatibus fuga, optio et facilis consequatur explicabo necessitatibus doloremque molestias quis earum laborum facere quisquam qui saepe labore accusamus! Sint dolorum aspernatur tempora quas.
+            Optio quae ullam magni quam. Corporis veniam odit vero inventore consequatur voluptate voluptas debitis totam sapiente quis, blanditiis facere nobis doloribus voluptatem omnis nam et exercitationem! Assumenda fugit minima ipsum?
+            Magni debitis quis esse labore soluta fugiat reiciendis adipisci qui eaque exercitationem, aliquid, vel nesciunt. Hic atque voluptate tempora fuga, quasi saepe repellendus necessitatibus delectus eum fugiat excepturi placeat maxime!</p>
+            <a href="#">Read more</a>
+          </div>   
+          
+        </swiper-slide>
+        
+        <swiper-slide>
+          <div class="book-img">
+            <img src="./static/images/book_cover/7.Harry Potter and the Deathly Hallows.jpg" alt="">
+          </div>
+          <div class="bookcontent">
+            <h2 class="book-title">Harry Potter and the Chamber of Secrets</h2><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat hic quidem ea eligendi, esse architecto inventore error qui, dignissimos, non beatae? Voluptatibus, nesciunt qui. Eligendi quos aut illum quod libero.
+            Ratione cum placeat blanditiis ipsum. Excepturi voluptatibus fuga, optio et facilis consequatur explicabo necessitatibus doloremque molestias quis earum laborum facere quisquam qui saepe labore accusamus! Sint dolorum aspernatur tempora quas.
+            Optio quae ullam magni quam. Corporis veniam odit vero inventore consequatur voluptate voluptas debitis totam sapiente quis, blanditiis facere nobis doloribus voluptatem omnis nam et exercitationem! Assumenda fugit minima ipsum?
+            Magni debitis quis esse labore soluta fugiat reiciendis adipisci qui eaque exercitationem, aliquid, vel nesciunt. Hic atque voluptate tempora fuga, quasi saepe repellendus necessitatibus delectus eum fugiat excepturi placeat maxime!</p>
+            <a href="#">Read more</a>
+          </div>   
+          
+        </swiper-slide>
+        
+        <swiper-slide>
+          <div class="book-img">
+            <img src="./static/images/book_cover/Alice in Wonderland.jpg" alt="">
+          </div>
+          <div class="bookcontent">
+            <h2 class="book-title">Harry Potter and the Chamber of Secrets</h2><br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat hic quidem ea eligendi, esse architecto inventore error qui, dignissimos, non beatae? Voluptatibus, nesciunt qui. Eligendi quos aut illum quod libero.
+            Ratione cum placeat blanditiis ipsum. Excepturi voluptatibus fuga, optio et facilis consequatur explicabo necessitatibus doloremque molestias quis earum laborum facere quisquam qui saepe labore accusamus! Sint dolorum aspernatur tempora quas.
+            Optio quae ullam magni quam. Corporis veniam odit vero inventore consequatur voluptate voluptas debitis totam sapiente quis, blanditiis facere nobis doloribus voluptatem omnis nam et exercitationem! Assumenda fugit minima ipsum?
+            Magni debitis quis esse labore soluta fugiat reiciendis adipisci qui eaque exercitationem, aliquid, vel nesciunt. Hic atque voluptate tempora fuga, quasi saepe repellendus necessitatibus delectus eum fugiat excepturi placeat maxime!</p>
+            <a href="#">Read more</a>
+          </div>   
+          
+        </swiper-slide>
+        
+        
+        
+     </swiper-container>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>

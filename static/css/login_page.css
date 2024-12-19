@@ -1,0 +1,45 @@
+:root{
+    --base-clr: #E0E6E9;
+    --line-clr:#363849;
+    --hover-clr:#2C6975;
+    --text-clr:#e6e6ef;
+    --accent-clr:#5e63ff;
+    --secondary-text-clr:#242424;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.book-display{
+    height: 60%;
+
+    img{
+
+        height: 100%;
+    }
+}
+
+.login{
+    padding: 8em;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--base-clr);
+
+    
+}
